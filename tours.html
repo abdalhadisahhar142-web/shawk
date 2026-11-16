@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Readex+Pro:wght@200;300;400;500&family=El+Messiri:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/rtl.css" />
+  <title>العروض – مجموعة شركات شوق الدولية</title>
+  <meta name="description" content="عروض شوق الدولية: عمرة مع قوافل النور من 500$، برامج حج وزيارات دينية، تأشيرات وطيران ونقل دولي." />
+</head>
+<body data-page="tours">
+  <div id="site-header"></div>
+
+  <section class="page-hero" data-bg="towers">
+    <div class="container">
+      <p class="crumbs"><a href="index.html">الرئيسية</a> / العروض</p>
+      <h1 class="h-xl">عروضنا</h1>
+      <p>حج وعمرة، تأشيرات ومعاملات، سفر ونقل — الأسعار بالدولار للشخص الواحد.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:40px">
+    <div class="container">
+      <div class="filters">
+        <div class="chips">
+          <button class="chip" data-type="all">الكل</button>
+          <button class="chip" data-type="umrah">حج وعمرة</button>
+          <button class="chip" data-type="visa">تأشيرات ومعاملات</button>
+          <button class="chip" data-type="services">سفر ونقل</button>
+        </div>
+        <div class="filters__right">
+          <select class="field-inline" id="fDest" aria-label="الوجهة"></select>
+          <input class="field-inline" id="fSearch" type="search" placeholder="ابحث…" aria-label="ابحث" />
+        </div>
+      </div>
+      <p class="results-count" id="toursCount" style="margin-bottom:24px"></p>
+      <div class="tours-grid" id="toursGrid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
